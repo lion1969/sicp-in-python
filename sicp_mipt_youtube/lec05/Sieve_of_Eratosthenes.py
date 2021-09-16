@@ -1,10 +1,10 @@
 """
 Изначально все числа простые
 """
-N = 1000
+N = 1000000
 N += 1
-line_step = 100
 A = [True] * N
+line_step = 100
 
 # print(A)
 # exit(0)
@@ -36,4 +36,11 @@ for x in Prime_digits_list:
 if len(tmpAry) > 0:
     B.append(tmpAry)
 
-print(B)
+Boo = []
+for x in B:
+    Boo.append(len(x))
+Boo.sort()
+Bb = {x: None for x in Boo}
+Boo = [k  for k,v in Bb.items() ]
+
+print(Boo)
