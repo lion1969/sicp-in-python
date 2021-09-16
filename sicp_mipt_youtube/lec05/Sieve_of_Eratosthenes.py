@@ -32,6 +32,7 @@ for x in Prime_digits_list:
         tmpAry = []
         if i == cur:
             tmpAry.append(x)
+
 if len(tmpAry) > 0:
     B.append(tmpAry)
 
