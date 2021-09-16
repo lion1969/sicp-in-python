@@ -1,7 +1,11 @@
 """
 Изначально все числа простые
 """
-N = 1000000
+from datetime import datetime
+
+start_prog = datetime.now()
+print("Start: ", start_prog)
+N = 10000000
 N += 1
 A = [True] * N
 line_step = 100
@@ -27,8 +31,8 @@ for x in Prime_digits_list:
         tmpAry.append(x)
     else:
         i = i + 1
-        if len(tmpAry) > 0:
-            B.append(tmpAry)
+        #if len(tmpAry) > 0:
+        B.append(tmpAry)
         tmpAry = []
         if i == cur:
             tmpAry.append(x)
@@ -36,11 +40,13 @@ for x in Prime_digits_list:
 if len(tmpAry) > 0:
     B.append(tmpAry)
 
-Boo = []
+C = []
 for x in B:
-    Boo.append(len(x))
-Boo.sort()
-Bb = {x: None for x in Boo}
-Boo = [k  for k,v in Bb.items() ]
+    C.append(len(x))
+C.sort()
+C = {x: None for x in C}
+C = [k for k, v in C.items()]
 
-print(Boo)
+print(C)
+end_prog = datetime.now()
+print("Strat =", start_prog, "\n  End =", end_prog)
