@@ -1,0 +1,2 @@
+C:\Users\leo>c:\python38\python.exe -m ensurepip --default-pip
+C:\Users\leo>c:\python38\Scripts\pip.exe install graphics.py
