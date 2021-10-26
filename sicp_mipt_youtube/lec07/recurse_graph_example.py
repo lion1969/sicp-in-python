@@ -16,6 +16,7 @@ def fractal_rectangle(A, B, C, D, deep=10):
     fractal_rectangle(A1, B1, C1, D1, deep - 1)
 
 
-fractal_rectangle((100, 100), (500, 100), (500, 500), (100, 500))
-
-abc = input()
+fractal_rectangle((100, 100), (500, 100), (500, 500), (100, 500), 51)
+#window.getMouse()
+window.wait_window()
+window.close()
