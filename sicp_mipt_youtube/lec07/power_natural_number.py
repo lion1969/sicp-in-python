@@ -12,4 +12,4 @@ def pow(a: int, n: int) -> int:
     return 1 if n == 0 else pow(a, n - 1) * a
 
 
-print(pow(2, 4))
+print(pow(2, 30))
