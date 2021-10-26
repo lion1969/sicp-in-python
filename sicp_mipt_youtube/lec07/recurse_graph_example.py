@@ -13,7 +13,6 @@ def fractal_rectangle(A, B, C, D, deep=10):
     B1 = (B[0] * (1 - alpha) + C[0] * alpha, B[1] * (1 - alpha) + C[1] * alpha)
     C1 = (C[0] * (1 - alpha) + D[0] * alpha, C[1] * (1 - alpha) + D[1] * alpha)
     D1 = (D[0] * (1 - alpha) + A[0] * alpha, D[1] * (1 - alpha) + A[1] * alpha)
-    sys.
     fractal_rectangle(A1, B1, C1, D1, deep - 1)
 
 
