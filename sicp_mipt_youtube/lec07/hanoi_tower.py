@@ -4,12 +4,12 @@
 
 def hanoi(n:int, i: int, k: int):
     if n == 1 :
-        print("Move disk 1 from pin", i, "to ", k, ".")
+        print("Move disk 1 from pin " + str(i) + " to " + str(k) + ".")
         return
     else:
         tmp = 6 - i - k
         hanoi(n-1, i, tmp)
-        print("Move disk", n, "from pin", i, "to ", k, ".")
+        print("Move disk " + str(n) + " from pin " + str(i) + " to " + str(k) + ".")
         hanoi(n - 1, tmp, k)
 
-hanoi(4, 1, 2)
+hanoi(3, 1, 2)
