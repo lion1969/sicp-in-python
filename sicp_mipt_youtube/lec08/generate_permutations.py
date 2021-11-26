@@ -54,5 +54,3 @@ def generate_permutations(N: int, M=-1, prefix=None):
 generate_permutations(6,6)
 #generate_number(3, 4)
 # gen_bin(3)
-
-# TODO найти сортировку Хоара.
