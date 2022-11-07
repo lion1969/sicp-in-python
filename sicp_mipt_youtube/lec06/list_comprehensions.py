@@ -1,11 +1,11 @@
 A = [0,1,2,3,4,5,6,7]
-B = [x for x in A]
+#B = [x for x in A]
 
-print(B)
+#print(B)
 # squares
 # Redefine array A!!!!
 A = [x*x for x in A]
-A.reverse()
+#A.reverse()
 print(A)
 First = [1,2]
 Second = [3,4]
